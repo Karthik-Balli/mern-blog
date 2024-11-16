@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// MONGO is Variable that stores about information mongodb connection URI
+// Check out the docs for more about MONGO variable
 mongoose.connect(process.env.MONGO)
 .then(() => {
     console.log('MongoDB Connected!')

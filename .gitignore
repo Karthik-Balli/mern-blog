@@ -25,3 +25,6 @@ dist-ssr
 
 # Added .env file, to ignore in github
 .env
+
+# Added text file as notes fro refrence
+*.txt

@@ -82,6 +82,7 @@ export default function SignUp() {
               />
             </div>
             <Button
+              className='bg-slate-600'
               type='submit'
               disabled={loading}
             >

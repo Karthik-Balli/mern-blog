@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Header from "./components/Header";
+import PostPage from "./pages/PostPage";
 import { PrivateRoute } from "./components/PrivateRoute";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path='/post/:postSlug' element={<PostPage />} />
         </Route>
 
         <Route path="/signin" element={<SignIn />} />

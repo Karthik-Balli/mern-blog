@@ -1,6 +1,4 @@
-export const test =
-  ("/test",
-  (req, res) => {
+export const test =("/test",(req, res) => {
     res.json({ message: "API is Working" });
   });
 
@@ -11,3 +9,5 @@ export const signout = (req, res, next) => {
     next(error);
   }
 };
+
+

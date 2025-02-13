@@ -7,6 +7,8 @@ import SignUp from "./pages/SignUp";
 import Header from "./components/Header";
 import PostPage from "./pages/PostPage";
 import { PrivateRoute } from "./components/PrivateRoute";
+import OnlyAdminPrivateRoute from "./components/OnlyAdminPrivateRoute";
+import CreatePost from './pages/CreatePost';
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path='/post/:postSlug' element={<PostPage />} />
+        </Route>
+
+        <Route element={<OnlyAdminPrivateRoute />}>
+          <Route path="/create-post" element={<CreatePost />} />
         </Route>
 
         <Route path="/signin" element={<SignIn />} />

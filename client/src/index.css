@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+body {
+  height: 100vh;
+}
+.ql-editor {
+  font-size: 1.05rem;
+}
+
 /* To Hide the scroll bar For Webkit-based browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
     display: none;

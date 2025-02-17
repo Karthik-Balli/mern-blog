@@ -1,8 +1,12 @@
 import express from 'express';
-import { getposts } from '../controllers/post.controller.js';
+import { create } from '../controllers/post.controller.js';
 
 const router = express.Router();
 
-router.get('/getposts', getposts);
+
+// Post route is need to have verified tocken
+// router.get('/getposts', getposts);
+
+router.post('/create', create);
 
 export default router;
